@@ -414,15 +414,24 @@ async function checkForNewOrders() {
   } catch { }
 }
 
+function onSwMessage(e: MessageEvent) {
+  if (e.data?.type === 'nuevo-pedido') checkForNewOrders()
+}
+
 onMounted(() => {
   if (admin.can.orders) {
     checkForNewOrders()
     orderPollTimer = setInterval(checkForNewOrders, 20_000)
-    if (pushSupported) registerServiceWorker()
+    if (pushSupported) {
+      registerServiceWorker()
+      navigator.serviceWorker.addEventListener('message', onSwMessage)
+    }
   }
 })
+
 onUnmounted(() => {
   if (orderPollTimer) clearInterval(orderPollTimer)
+  if (pushSupported) navigator.serviceWorker.removeEventListener('message', onSwMessage)
 })
 
 // ── Soporte WhatsApp ──────────────────────────────────────
