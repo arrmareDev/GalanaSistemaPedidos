@@ -7,7 +7,6 @@ use App\Repositories\OrderRepository;
 use App\Repositories\ProductRepository;
 use App\Services\ClientService;
 use App\Services\OrderService;
-use App\Services\ProductService;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Order;
 use App\Observers\OrderObserver;
@@ -22,7 +21,6 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(ClientRepository::class);
 
         // Services
-        $this->app->singleton(ProductService::class);
         $this->app->singleton(OrderService::class);
         $this->app->singleton(ClientService::class);
     }

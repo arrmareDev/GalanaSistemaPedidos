@@ -57,7 +57,7 @@
                                 tracking-widest text-gray-500">
                                         Correo electrónico *
                                     </label>
-                                    <input v-model="form.email" type="email" placeholder="usuario@birds.pe"
+                                    <input v-model="form.email" type="email" placeholder="usuario@galana.pe"
                                         class="modal-input" />
                                 </div>
 

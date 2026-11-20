@@ -5,34 +5,34 @@ export default {
     extend: {
       colors: {
         brand: {
-          green: "#163020",
-          green2: "#102418",
-          green3: "#1C3B27",
-          accent: "#E6D5C3",
-          terracotta: "#9A6B56",
-          dark: "#0F1A13",
-          bg: "#F8F5F0",
+          green: "#2B2218",
+          green2: "#1F1810",
+          green3: "#3A2E1F",
+          accent: "#F3E9D2",
+          terracotta: "#9A7424",
+          dark: "#1A1409",
+          bg: "#FBF8F1",
         },
         surface: {
-          DEFAULT: "#F9FAF9",
+          DEFAULT: "#FAF9F6",
           card: "#FFFFFF",
-          warm: "#F3F5F3",
-          border: "#E0E5E1",
-          border2: "#C2CCC4",
+          warm: "#F5F2EA",
+          border: "#E8E2D3",
+          border2: "#D3C9B2",
         },
         ink: {
-          DEFAULT: "#0F1A13",
-          soft: "#1A2E22",
-          mid: "#3D5C4A",
-          muted: "#7A9987",
-          faint: "#A8BFB3",
+          DEFAULT: "#1A1409",
+          soft: "#2B2218",
+          mid: "#5C4C33",
+          muted: "#99886A",
+          faint: "#BFB297",
         },
         // ── Aliases para componentes ──
-        birds: {
-          DEFAULT: "#0C542C",
-          deep: "#083B1E",
-          glow: "#126B38",
-          light: "rgba(12,84,44,0.10)",
+        galana: {
+          DEFAULT: "#A8802E",
+          deep: "#8A6720",
+          glow: "#C09A45",
+          light: "rgba(168,128,46,0.10)",
         },
         cream: {
           DEFAULT: "#FFFAF5",
@@ -50,10 +50,10 @@ export default {
           // combinarle una opacidad, dejando esas clases sin pintar nada.
           DEFAULT: ({ opacityValue }) =>
             opacityValue === undefined
-              ? "var(--color-brand-primary, #C41E1E)"
-              : `rgba(var(--color-brand-primary-rgb, 196, 30, 30), ${opacityValue})`,
-          dark: "var(--color-brand-primary-dark, #9B1717)",
-          light: "#FDEDED",
+              ? "var(--color-brand-primary, #A8802E)"
+              : `rgba(var(--color-brand-primary-rgb, 168, 128, 46), ${opacityValue})`,
+          dark: "var(--color-brand-primary-dark, #8A6720)",
+          light: "#F8F1E0",
         },
       },
       fontFamily: {
@@ -61,15 +61,15 @@ export default {
         body: ['"Plus Jakarta Sans"', "sans-serif"],
       },
       boxShadow: {
-        card: "0 1px 4px rgba(12,84,44,0.06), 0 2px 8px rgba(12,84,44,0.04)",
-        "card-lg": "0 4px 20px rgba(12,84,44,0.10)",
-        "green-sm": "0 2px 12px rgba(12,84,44,0.25)",
-        "green-md": "0 4px 24px rgba(12,84,44,0.35)",
-        "green-lg": "0 8px 40px rgba(12,84,44,0.45)",
+        card: "0 1px 4px rgba(168,128,46,0.06), 0 2px 8px rgba(168,128,46,0.04)",
+        "card-lg": "0 4px 20px rgba(168,128,46,0.10)",
+        "green-sm": "0 2px 12px rgba(168,128,46,0.25)",
+        "green-md": "0 4px 24px rgba(168,128,46,0.35)",
+        "green-lg": "0 8px 40px rgba(168,128,46,0.45)",
         "red-sm":
-          "0 2px 12px rgba(var(--color-brand-primary-rgb, 196, 30, 30), 0.25)",
+          "0 2px 12px rgba(var(--color-brand-primary-rgb, 168, 128, 46), 0.25)",
         "red-md":
-          "0 4px 24px rgba(var(--color-brand-primary-rgb, 196, 30, 30), 0.35)",
+          "0 4px 24px rgba(var(--color-brand-primary-rgb, 168, 128, 46), 0.35)",
       },
       borderRadius: {
         "4xl": "2rem",

@@ -4,7 +4,7 @@
 return [
     'vapid' => [
         // Identifica tu sitio ante los navegadores — un mailto: o una URL https:// tuya.
-        'subject'     => env('VAPID_SUBJECT', 'mailto:soporte@birds.pe'),
+        'subject'     => env('VAPID_SUBJECT', 'mailto:soporte@galana.pe'),
         'public_key'  => env('VAPID_PUBLIC_KEY'),
         'private_key' => env('VAPID_PRIVATE_KEY'),
     ],

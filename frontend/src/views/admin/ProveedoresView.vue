@@ -245,7 +245,7 @@
                         <div class="flex flex-col gap-1.5">
                             <label class="text-[10.5px] font-black uppercase tracking-widest text-gray-500">Mensaje de
                                 descuento</label>
-                            <input v-model="form.descuento_texto" placeholder="Ej: 10% mencionando que vienes de Birds"
+                            <input v-model="form.descuento_texto" placeholder="Ej: 10% mencionando que vienes de Galana"
                                 class="modal-input w-full" />
                             <p class="text-[11px] text-gray-400 m-0">
                                 Es solo un mensaje informativo — el descuento lo aplica el proveedor manualmente, no el

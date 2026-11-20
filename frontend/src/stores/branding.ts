@@ -14,9 +14,9 @@ export interface Branding {
 
 const DEFAULTS: Branding = {
   nombre_negocio: "Mi Negocio",
-  logo_url: "/images/logobirds.png",
-  color_primario: "#C41E1E",
-  color_primario_dark: "#9B1717",
+  logo_url: "/images/logo-galana.jpeg",
+  color_primario: "#A8802E",
+  color_primario_dark: "#8A6720",
   telefono: null,
   whatsapp: null,
   direccion: null,
@@ -41,7 +41,7 @@ export const useBrandingStore = defineStore("branding", () => {
     const r = parseInt(clean.substring(0, 2), 16);
     const g = parseInt(clean.substring(2, 4), 16);
     const b = parseInt(clean.substring(4, 6), 16);
-    if ([r, g, b].some((n) => Number.isNaN(n))) return "196, 30, 30";
+    if ([r, g, b].some((n) => Number.isNaN(n))) return "168, 128, 46";
     return `${r}, ${g}, ${b}`;
   }
 

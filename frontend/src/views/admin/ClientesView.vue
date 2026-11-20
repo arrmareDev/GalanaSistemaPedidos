@@ -699,14 +699,14 @@ function segmentoBadgeClass(c: Client) {
 }
 
 function waLink(c: Client, tipo: 'saludo' | 'promo' | 'reactivar' | 'cumple'): string {
-  const phone = import.meta.env.VITE_WA_PHONE ?? '51984199340'
+  const phone = import.meta.env.VITE_WA_PHONE ?? '51999999999'
   const nombre = c.name.split(' ')[0]
 
   const mensajes: Record<string, string> = {
-    saludo: `Hola ${nombre} ¡Gracias por ser cliente de Birds! ¿Cómo estás?`,
+    saludo: `Hola ${nombre} ¡Gracias por ser cliente de Galana! ¿Cómo estás?`,
     promo: `Hola ${nombre} ¡Tenemos una oferta especial para ti! Esta semana 10% de descuento en tu próximo pedido. ¿Te animás? `,
-    reactivar: `Hola ${nombre} ¡Te extrañamos en Birds! Han pasado unos días y queremos invitarte a volver. Recuerda que nos puedes pedir a domicilio. ¡Te esperamos!`,
-    cumple: `Hola ${nombre} Desde Birds te deseamos un día increíble en tu cumpleaños. ¡Que lo celebres a lo grande!`,
+    reactivar: `Hola ${nombre} ¡Te extrañamos en Galana! Han pasado unos días y queremos invitarte a volver. Recuerda que nos puedes pedir a domicilio. ¡Te esperamos!`,
+    cumple: `Hola ${nombre} Desde Galana te deseamos un día increíble en tu cumpleaños. ¡Que lo celebres a lo grande!`,
   }
 
   return `https://wa.me/${c.phone.replace(/\D/g, '')}?text=${encodeURIComponent(mensajes[tipo])}`

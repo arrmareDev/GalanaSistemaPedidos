@@ -176,7 +176,7 @@ const progress = ref(0)
 
 const brandingStore = useBrandingStore()
 const waLink = computed(() => {
-    const phone = (brandingStore.branding.whatsapp ?? import.meta.env.VITE_WA_PHONE ?? '51984199340').replace(/\D/g, '')
+    const phone = (brandingStore.branding.whatsapp ?? import.meta.env.VITE_WA_PHONE ?? '51999999999').replace(/\D/g, '')
     return `https://wa.me/${phone}?text=${encodeURIComponent('¡Hola! Quisiera hacer un pedido')}`
 })
 
@@ -184,48 +184,48 @@ const progressWidth = computed(() =>
     paused.value ? (progress.value / INTERVAL * 100) : 100
 )
 
-// ── Slides actualizados con la paleta de Birds ───────
+// ── Slides actualizados con la paleta de la marca ───────
 const SLIDES = [
-    {
-        id: 1,
-        bgImage: '/images/sombrerera.png',
-        bg: 'linear-gradient(135deg,#0C542C,#083B1E,#052211)',
-        overlay: 'linear-gradient(110deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.12) 100%)',
-        badgeIcon: 'flower-2',
-        badge: 'Selección del día',
-        badgeText: '#D4AF37',
-        badgeBg: 'rgba(212,175,55,0.15)',
-        badgeBorder: 'rgba(212,175,55,0.35)',
-        title: 'Rosas que<br><span style="color:#E6D5C3">hablan por tí</span>',
-        subtitle: 'Arreglos florales elaborados con rosas premium cuidadosamente seleccionadas. El detalle perfecto para sorprender, celebrar y crear momentos inolvidables.',
-        priceTag: '95',
-        priceSub: 'precio especial hoy',
-        ctaBg: '#0C542C',
-        ctaColor: '#FFFFFF',
-        cta: 'Pedir ahora →',
-        ctaWa: 'Pedir por WhatsApp',
-        floatBadges: [
-            { icon: 'leaf', text: 'Flores frescas del día', bg: 'rgba(0,0,0,0.55)', border: 'rgba(255,255,255,0.15)', color: '#fff' },
-            { icon: 'ribbon', text: 'Envoltura premium', bg: 'rgba(0,0,0,0.55)', border: 'rgba(255,255,255,0.15)', color: '#fff' },
-        ],
-    },
+    // {
+    //     id: 1,
+    //     bgImage: '/images/sombrerera.png',
+    //     bg: 'linear-gradient(135deg,#3A2E1F,#2B2218,#1A1409)',
+    //     overlay: 'linear-gradient(110deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.45) 55%, rgba(0,0,0,0.12) 100%)',
+    //     badgeIcon: 'flower-2',
+    //     badge: 'Selección del día',
+    //     badgeText: '#D4AF37',
+    //     badgeBg: 'rgba(212,175,55,0.15)',
+    //     badgeBorder: 'rgba(212,175,55,0.35)',
+    //     title: 'Rosas que<br><span style="color:#E6D5C3">hablan por tí</span>',
+    //     subtitle: 'Arreglos florales elaborados con rosas premium cuidadosamente seleccionadas. El detalle perfecto para sorprender, celebrar y crear momentos inolvidables.',
+    //     priceTag: '95',
+    //     priceSub: 'precio especial hoy',
+    //     ctaBg: '#A8802E',
+    //     ctaColor: '#FFFFFF',
+    //     cta: 'Pedir ahora →',
+    //     ctaWa: 'Pedir por WhatsApp',
+    //     floatBadges: [
+    //         { icon: 'leaf', text: 'Flores frescas del día', bg: 'rgba(0,0,0,0.55)', border: 'rgba(255,255,255,0.15)', color: '#fff' },
+    //         { icon: 'ribbon', text: 'Envoltura premium', bg: 'rgba(0,0,0,0.55)', border: 'rgba(255,255,255,0.15)', color: '#fff' },
+    //     ],
+    // },
     {
         id: 2,
         bgImage: '/images/cajarosas.png',
-        bg: 'linear-gradient(135deg,#126B38,#0C542C,#052211)',
+        bg: 'linear-gradient(135deg,#5A4520,#3A2E1F,#1A1409)',
         overlay: 'linear-gradient(110deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.42) 55%, rgba(0,0,0,0.10) 100%)',
         badgeIcon: 'sparkles',
         badge: 'Diseño estrella',
         badgeText: '#FFFFFF',
-        badgeBg: 'rgba(12,84,44,0.3)',
-        badgeBorder: 'rgba(12,84,44,0.5)',
+        badgeBg: 'rgba(168,128,46,0.3)',
+        badgeBorder: 'rgba(168,128,46,0.5)',
         title: 'Arreglo<br><span style="color:#E6D5C3">en Caja</span>',
         subtitle: 'Composición de rosas, eucalipto y flores de temporada en caja sombrero. Incluye tarjeta dedicatoria.',
         priceTag: '129',
         oldPrice: '159',
         priceSub: 'incluye tarjeta',
         ctaBg: '#D4AF37',
-        ctaColor: '#052211',
+        ctaColor: '#1A1409',
         cta: 'Ver arreglo →',
         ctaWa: null,
         floatBadges: [
@@ -236,17 +236,17 @@ const SLIDES = [
     {
         id: 3,
         bgImage: '/images/delivery.jpeg',
-        bg: 'linear-gradient(135deg,#0C542C,#083B1E,#052211)',
+        bg: 'linear-gradient(135deg,#3A2E1F,#2B2218,#1A1409)',
         overlay: 'linear-gradient(110deg, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.40) 55%, rgba(0,0,0,0.10) 100%)',
         badgeIcon: 'bike',
         badge: 'Delivery disponible',
         badgeText: '#FFFFFF',
-        badgeBg: 'rgba(12,84,44,0.3)',
-        badgeBorder: 'rgba(12,84,44,0.5)',
+        badgeBg: 'rgba(168,128,46,0.3)',
+        badgeBorder: 'rgba(168,128,46,0.5)',
         title: 'Entrega<br><span style="color: #E6D5C3">a Chiclayo</span>',
         subtitle: 'Llevamos tu detalle a domicilio con entrega programada. Chiclayo, J.L.O., La Victoria, Pimentel y San José.',
         priceTag: null,
-        ctaBg: '#0C542C',
+        ctaBg: '#A8802E',
         ctaColor: '#FFFFFF',
         cta: 'Pedir con delivery →',
         ctaWa: null,
@@ -258,7 +258,7 @@ const SLIDES = [
     {
         id: 4,
         bgImage: '/images/ocacion.png',
-        bg: 'linear-gradient(135deg,#126B38,#0C542C,#052211)',
+        bg: 'linear-gradient(135deg,#5A4520,#3A2E1F,#1A1409)',
         overlay: 'linear-gradient(110deg, rgba(0,0,0,0.76) 0%, rgba(0,0,0,0.42) 55%, rgba(0,0,0,0.10) 100%)',
         badgeIcon: 'gift',
         badge: 'Para cada ocasión',
@@ -269,7 +269,7 @@ const SLIDES = [
         subtitle: 'Cumpleaños, aniversarios, condolencias, graduaciones. Diseños personalizados para cada momento especial.',
         priceTag: '45',
         priceSub: 'desde',
-        ctaBg: '#0C542C',
+        ctaBg: '#A8802E',
         ctaColor: '#FFFFFF',
         cta: 'Ver catálogo →',
         ctaWa: null,

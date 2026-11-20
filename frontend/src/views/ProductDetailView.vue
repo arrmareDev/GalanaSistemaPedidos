@@ -393,7 +393,7 @@
                                     ? 'bg-gray-400'
                                     : added
                                         ? 'bg-green-600 shadow-[0_6px_20px_rgba(22,163,74,0.3)]'
-                                        : 'bg-brand-green hover:bg-brand-green2 shadow-[0_8px_24px_rgba(12,84,44,0.3)]'">
+                                        : 'bg-brand-green hover:bg-brand-green2 shadow-[0_8px_24px_rgba(168,128,46,0.3)]'">
                                 <Transition mode="out-in" enter-active-class="transition-all duration-200"
                                     enter-from-class="opacity-0 scale-50"
                                     leave-active-class="transition-all duration-150"
@@ -501,7 +501,7 @@
                 leave-active-class="transition-all duration-200 ease-in"
                 leave-to-class="opacity-0 -translate-y-8 scale-90">
                 <div v-if="added" class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] 
-                            bg-brand-green text-white px-5 py-3.5 rounded-2xl shadow-[0_8px_30px_rgba(12,84,44,0.4)]
+                            bg-brand-green text-white px-5 py-3.5 rounded-2xl shadow-[0_8px_30px_rgba(168,128,46,0.4)]
                             flex items-center gap-3 font-bold text-[14px] w-auto max-w-sm border border-brand-green2">
                     <div class="w-7 h-7 rounded-full bg-white flex items-center justify-center shrink-0">
                         <CheckIcon class="w-4 h-4 text-brand-green font-black" />

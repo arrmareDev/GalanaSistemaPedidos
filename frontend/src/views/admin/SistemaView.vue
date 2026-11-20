@@ -21,7 +21,7 @@
                         <label class="text-[11px] font-black uppercase tracking-widest text-gray-500">
                             Nombre del negocio
                         </label>
-                        <input v-model="brandingForm.nombre_negocio" placeholder="Ej: Birds" class="branding-input" />
+                        <input v-model="brandingForm.nombre_negocio" placeholder="Ej: Galana" class="branding-input" />
                     </div>
 
                     <!-- Logo -->
@@ -69,21 +69,21 @@
                         <label class="text-[11px] font-black uppercase tracking-widest text-gray-500">
                             Teléfono
                         </label>
-                        <input v-model="brandingForm.telefono" placeholder="984199340" class="branding-input" />
+                        <input v-model="brandingForm.telefono" placeholder="999999999" class="branding-input" />
                     </div>
 
                     <div class="flex flex-col gap-1.5">
                         <label class="text-[11px] font-black uppercase tracking-widest text-gray-500">
                             WhatsApp (con código de país, sin +)
                         </label>
-                        <input v-model="brandingForm.whatsapp" placeholder="51984199340" class="branding-input" />
+                        <input v-model="brandingForm.whatsapp" placeholder="51999999999" class="branding-input" />
                     </div>
 
                     <div class="flex flex-col gap-1.5 sm:col-span-2">
                         <label class="text-[11px] font-black uppercase tracking-widest text-gray-500">
                             Dirección
                         </label>
-                        <input v-model="brandingForm.direccion" placeholder="Ej: Torres Paz N° 361, Chiclayo" class="branding-input" />
+                        <input v-model="brandingForm.direccion" placeholder="Ej: Av. Principal 123, Chiclayo" class="branding-input" />
                     </div>
                 </div>
 

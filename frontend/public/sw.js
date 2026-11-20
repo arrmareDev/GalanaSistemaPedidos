@@ -17,8 +17,8 @@ self.addEventListener("push", (event) => {
   const title = payload.title || "Nuevo pedido";
   const options = {
     body: payload.body || "",
-    icon: payload.icon || "/logobirds.png",
-    badge: payload.badge || "/logobirds.png",
+    icon: payload.icon || "/images/logo-galana.jpeg",
+    badge: payload.badge || "/images/logo-galana.jpeg",
     data: payload.data || {},
     tag: "nuevo-pedido", // agrupa notificaciones seguidas en una sola
     renotify: true, // pero sí vibra/suena de nuevo cada vez

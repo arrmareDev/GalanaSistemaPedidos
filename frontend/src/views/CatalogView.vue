@@ -249,9 +249,9 @@
                 </div>
               </div>
 
-              <!--Separador Aves (Excepto en la última categoría)-->
+              <!--Separador (excepto en la última categoría)-->
               <div v-if="index < groupedProducts.length - 1" class="flex justify-center mt-12 mb-2 opacity-50">
-                <img src="/images/pajaros.png" alt="Separador Birds" class="h-10 sm:h-12 object-contain" />
+                <div class="h-px w-24 bg-brand-red/40"></div>
               </div>
             </div>
           </div>
@@ -413,12 +413,12 @@ import type { Product } from '@/stores/products'
 import { Star, Flame, PackageSearch, X, LayoutGrid as Squares2X2Icon } from 'lucide-vue-next'
 
 useHead({
-  title: 'Birds Perú - Florería',
+  title: 'Galana Atelier Floral',
   meta: [
-    { name: 'description', content: 'Las flores más frescas de Chiclayo. Diseños que emocionan para cada ocasión especial.' },
+    { name: 'description', content: 'Arreglos florales y detalles únicos para cada ocasión especial.' },
   ],
   link: [
-    { rel: 'canonical', href: 'https://floreria.birds.pe' },
+    { rel: 'canonical', href: 'https://carta.galana.pe' },
   ],
 })
 
@@ -563,11 +563,11 @@ function scrollToMenu() {
    ══════════════════════════════════════════════════════════════ */
 
 .promo-bar {
-  background: #10461d;
+  background: #A8802E;
 }
 
 .promo-star {
-  color: #F5C518;
+  color: #FFF3CC;
   animation: star-pulse 2s ease-in-out infinite;
 }
 

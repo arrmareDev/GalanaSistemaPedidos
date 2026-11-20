@@ -14,13 +14,13 @@ return new class extends Migration
     public function up(): void
     {
         $defaults = [
-            'nombre_negocio'      => 'Birds',
-            'logo_url'            => '/images/logobirds.png',
-            'color_primario'      => '#C41E1E',
-            'color_primario_dark' => '#9B1717',
-            'telefono'            => '984199340',
-            'whatsapp'            => '984199340',
-            'direccion'           => 'Chiclayo, Torres Paz N° 361',
+            'nombre_negocio'      => 'Galana',
+            'logo_url'            => '/images/logo-galana.jpeg',
+            'color_primario'      => '#A8802E',
+            'color_primario_dark' => '#8A6720',
+            'telefono'            => '999999999',
+            'whatsapp'            => '51999999999',
+            'direccion'           => 'Dirección de prueba, Chiclayo',
         ];
 
         $descripciones = [

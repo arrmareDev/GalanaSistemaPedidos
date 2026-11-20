@@ -19,7 +19,7 @@
                   border-b border-gray-100 shrink-0">
 
         <div class="w-20 h-20 shrink-0 flex items-center justify-center">
-          <img src="/images/logobirds.png" alt="Birds Florería" class="w-full h-full object-contain"
+          <img src="/images/logo-galana.jpeg" alt="Galana Atelier Floral" class="w-full h-full object-contain"
             @error="($event.target as HTMLImageElement).style.display = 'none'" />
         </div>
 
@@ -310,7 +310,7 @@ const NOTIFICATION_SOUND_URL = '/sounds/notification.mp3'
 // El navegador exige que el audio se active con un clic real y explícito
 // del usuario. Por eso mostramos un banner hasta que la persona lo activa
 // a propósito, y lo recordamos para que no lo pida cada vez que entra.
-const soundEnabled = ref(localStorage.getItem('birds_admin_sound') === '1')
+const soundEnabled = ref(localStorage.getItem('galana_admin_sound') === '1')
 
 function playNotificationOnce() {
   try {
@@ -336,7 +336,7 @@ function playNewOrderSound() {
 // para el navegador, a diferencia de un clic genérico en la página.
 function enableSound() {
   soundEnabled.value = true
-  localStorage.setItem('birds_admin_sound', '1')
+  localStorage.setItem('galana_admin_sound', '1')
   playNotificationOnce() // confirmación audible de que quedó activado
 }
 
@@ -430,7 +430,7 @@ const supportLink = computed(() => {
   const phone = (import.meta.env.VITE_WA_PHONE ?? '51969943657').replace(/\D/g, '')
   const nombre = admin.user?.name ?? 'Admin'
   // ← MARCA: reemplaza el nombre del negocio en el mensaje
-  const mensaje = `Hola, soy *${nombre}* de Birds. Necesito soporte técnico.`
+  const mensaje = `Hola, soy *${nombre}* de Galana. Necesito soporte técnico.`
   return `https://wa.me/${phone}?text=${encodeURIComponent(mensaje)}`
 })
 

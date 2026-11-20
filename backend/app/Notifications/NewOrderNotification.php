@@ -27,7 +27,7 @@ class NewOrderNotification extends Notification
 
         return (new WebPushMessage)
             ->title('🔔 Nuevo pedido — ' . $tipoLabel)
-            ->icon('/logobirds.png')
+            ->icon('/images/logo-galana.jpeg')
             ->body("{$this->order->client_name} · S/ " . number_format((float) $this->order->total, 2))
             ->action('Ver pedido', 'ver_pedido')
             ->data(['url' => '/admin/pedidos'])

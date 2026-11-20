@@ -3,7 +3,7 @@ import { ref } from "vue";
 import api from "@/utils/api";
 import { useCartStore } from "./cart";
 
-const STORAGE_KEY = "birds_last_order";
+const STORAGE_KEY = "galana_last_order";
 const EXPIRATION_MS = 24 * 60 * 60 * 1000; // 24 horas
 
 export const useOrderStore = defineStore("order", () => {

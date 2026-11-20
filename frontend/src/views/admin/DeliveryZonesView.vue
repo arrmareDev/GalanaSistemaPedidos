@@ -22,7 +22,7 @@
         <div class="bg-blue-50 rounded-2xl border border-blue-100 p-4 flex items-start gap-3">
             <MapPin :size="20" class="shrink-0 text-blue-600" />
             <div>
-                <p class="font-bold text-[13px] text-blue-800 m-0">Torres Paz Mz.144 - Lt.30 - Chiclayo</p>
+                <p class="font-bold text-[13px] text-blue-800 m-0">Local Galana - Chiclayo</p>
                 <p class="text-[11.5px] text-blue-600 m-0 mt-0.5">
                     Todas las tarifas se calculan desde este punto usando distancia real en línea recta
                 </p>

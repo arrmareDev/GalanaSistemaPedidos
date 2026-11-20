@@ -29,7 +29,7 @@
               <h2 class="font-black text-[17px] text-gray-900 m-0 leading-none">
                 Tu pedido
               </h2>
-              <p class="text-[11px] text-gray-400 m-0 mt-0.5">Florería Birds</p>
+              <p class="text-[11px] text-gray-400 m-0 mt-0.5">Galana Atelier Floral</p>
             </div>
           </div>
           <div class="flex items-center gap-2">
@@ -193,7 +193,7 @@
             <button @click="goToCheckout" class="flex items-center justify-between w-full py-4 px-5
                      rounded-2xl no-underline bg-brand-green text-white
                      font-black text-[15px]
-                     shadow-[0_6px_24px_rgba(12,84,44,0.3)]
+                     shadow-[0_6px_24px_rgba(168,128,46,0.3)]
                      hover:bg-brand-green2 hover:-translate-y-0.5
                      active:scale-[0.98] transition-all duration-200
                      uppercase tracking-wide">

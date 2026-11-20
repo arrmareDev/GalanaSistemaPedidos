@@ -176,7 +176,7 @@ class SistemaController extends Controller
     {
         return [
             'nombre_negocio'      => ConfiguracionSistema::get('nombre_negocio', 'Mi Negocio'),
-            'logo_url'            => ConfiguracionSistema::get('logo_url', '/images/logobirds.png'),
+            'logo_url'            => ConfiguracionSistema::get('logo_url', '/images/logo-galana.jpeg'),
             'color_primario'      => ConfiguracionSistema::get('color_primario', '#C41E1E'),
             'color_primario_dark' => ConfiguracionSistema::get('color_primario_dark', '#9B1717'),
             'telefono'            => ConfiguracionSistema::get('telefono'),

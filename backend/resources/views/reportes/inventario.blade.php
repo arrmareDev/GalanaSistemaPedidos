@@ -99,7 +99,7 @@
 </head>
 
 <body>
-    <h1>Reporte de Inventario — Florería Birds</h1>
+    <h1>Reporte de Inventario — Galana Atelier Floral</h1>
     <p class="subtitle">Generado el {{ $generado }} · {{ $productos->count() }} productos con control de stock</p>
 
     <div class="resumen">

@@ -109,8 +109,8 @@ const order = computed(() => orderStore.currentOrder)
 // ── Número de Yape de la florería ─────────────────────────
 // Si está definido en .env (VITE_YAPE_PHONE) se usa ese;
 // si no, cae al número de WhatsApp por defecto.
-const YAPE_PHONE = import.meta.env.VITE_YAPE_PHONE ?? '51984199340'
-const YAPE_TITULAR = import.meta.env.VITE_YAPE_TITULAR ?? 'Florería Birds'
+const YAPE_PHONE = import.meta.env.VITE_YAPE_PHONE ?? '51999999999'
+const YAPE_TITULAR = import.meta.env.VITE_YAPE_TITULAR ?? 'Galana Atelier Floral'
 
 // ── Constantes ────────────────────────────────────────────
 const STEPS = [
@@ -159,7 +159,7 @@ function formatHora(hora: string): string {
 
 // ── WhatsApp ──────────────────────────────────────────────
 function sendWA() {
-  const rawPhone = import.meta.env.VITE_WA_PHONE ?? '51984199340'
+  const rawPhone = import.meta.env.VITE_WA_PHONE ?? '51999999999'
   const phone = rawPhone.replace(/\D/g, '')
   const numero = orderStore.orderNumber || '—'
   const o = order.value
@@ -168,7 +168,7 @@ function sendWA() {
   const L: string[] = []
 
   // ── Saludo Inicial ────────────────────────────────────────
-  L.push(`Hola *Florería Birds*`)
+  L.push(`Hola *Galana Atelier Floral*`)
   L.push(`Soy *${clientName}*, aquí está el detalle de mi pedido:`)
   L.push(``)
   L.push(`*PEDIDO #${numero}*`)

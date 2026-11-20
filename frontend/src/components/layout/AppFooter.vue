@@ -17,7 +17,7 @@
 
 
                     <p class="text-zinc-400 text-sm leading-relaxed max-w-sm">
-                        El aroma inconfundible del café más especial de Chiclayo se mezcla con la frescura de las flores
+                        Arreglos florales y detalles únicos, creados con dedicación para cada ocasión especial
                         que despiertan emociones en cada ocasión.
                     </p>
                 </div>
@@ -63,7 +63,7 @@
                             </div>
                             <div>
                                 <p class="text-[11px] text-zinc-500 leading-none mb-1">Ubicación</p>
-                                <span class="font-medium line-clamp-1">Torres Paz 261 | Chiclayo - Perú</span>
+                                <span class="font-medium line-clamp-1">Chiclayo - Perú</span>
                             </div>
                         </li>
                     </ul>
@@ -140,7 +140,7 @@ const year = new Date().getFullYear()
 const waLink = computed(() => {
     let phone = (brandingStore.branding.whatsapp
         ?? import.meta.env.VITE_WA_PHONE
-        ?? '51984199340').replace(/\D/g, '')
+        ?? '51999999999').replace(/\D/g, '')
 
     // Si no empieza con 51, lo agregamos
     if (!phone.startsWith('51')) {

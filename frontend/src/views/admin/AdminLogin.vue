@@ -4,7 +4,7 @@
     <!-- ══ PANEL IZQUIERDO ══ -->
     <div class="hidden lg:flex w-[45%] flex-col items-center justify-center
                 relative overflow-hidden"
-      style="background: linear-gradient(160deg, #0B2A1D 0%, #1B4B36 50%, #0F3527 100%);">
+      style="background: linear-gradient(160deg, #2B2218 0%, #5A4520 50%, #3A2E1F 100%);">
 
       <!-- Glow suave detrás del logo, en vez del patrón de rayos -->
       <div class="absolute top-[18%] left-1/2 -translate-x-1/2 w-[420px] h-[420px]
@@ -105,14 +105,14 @@
             <div class="relative">
               <EnvelopeIcon class="absolute left-3.5 top-1/2 -translate-y-1/2
                        w-4 h-4 text-gray-400 pointer-events-none" />
-              <input id="email" v-model.trim="email" type="email" placeholder="admin@birds.pe" autocomplete="email"
+              <input id="email" v-model.trim="email" type="email" placeholder="admin@galana.pe" autocomplete="email"
                 required :class="[
                   'w-full pl-10 pr-4 py-3.5 rounded-2xl border-2 text-[14px]',
                   'text-gray-900 font-medium outline-none bg-gray-50',
                   'placeholder:text-gray-300 transition-all duration-200',
                   fieldError.email
                     ? 'border-red-300 bg-red-50/30 focus:border-red-400 focus:shadow-[0_0_0_4px_rgba(var(--color-brand-primary-rgb,196,30,30),0.08)]'
-                    : 'border-gray-100 focus:border-brand-green focus:bg-white focus:shadow-[0_0_0_4px_rgba(27,75,54,0.10)]',
+                    : 'border-gray-100 focus:border-brand-green focus:bg-white focus:shadow-[0_0_0_4px_rgba(168,128,46,0.10)]',
                 ]" @input="clearFieldError('email')" />
             </div>
             <Transition enter-active-class="transition-all duration-150" enter-from-class="opacity-0 -translate-y-1"
@@ -140,7 +140,7 @@
                   'placeholder:text-gray-300 transition-all duration-200',
                   fieldError.password
                     ? 'border-red-300 bg-red-50/30 focus:border-red-400 focus:shadow-[0_0_0_4px_rgba(var(--color-brand-primary-rgb,196,30,30),0.08)]'
-                    : 'border-gray-100 focus:border-brand-green focus:bg-white focus:shadow-[0_0_0_4px_rgba(27,75,54,0.10)]',
+                    : 'border-gray-100 focus:border-brand-green focus:bg-white focus:shadow-[0_0_0_4px_rgba(168,128,46,0.10)]',
                 ]" @input="clearFieldError('password')" />
               <button type="button" @click="showPass = !showPass" class="absolute right-3.5 top-1/2 -translate-y-1/2
                        w-7 h-7 flex items-center justify-center
@@ -178,9 +178,9 @@
           <button type="submit" :disabled="loading" class="w-full py-4 rounded-2xl border-none cursor-pointer
                    font-black text-[15px] text-white uppercase tracking-wide
                    mt-1 bg-brand-green
-                   shadow-[0_6px_24px_rgba(27,75,54,0.30)]
+                   shadow-[0_6px_24px_rgba(168,128,46,0.30)]
                    hover:bg-brand-green-dark hover:-translate-y-0.5
-                   hover:shadow-[0_10px_32px_rgba(27,75,54,0.38)]
+                   hover:shadow-[0_10px_32px_rgba(168,128,46,0.38)]
                    active:scale-[0.98] active:translate-y-0
                    disabled:opacity-50 disabled:cursor-not-allowed
                    disabled:hover:translate-y-0 disabled:hover:shadow-none
@@ -312,18 +312,18 @@ async function handleLogin() {
 <style scoped>
 /* ── Verde de marca (solo en esta vista) ── */
 .bg-brand-green {
-  background-color: #1B4B36;
+  background-color: #A8802E;
 }
 
 .bg-brand-green-dark {
-  background-color: #123526;
+  background-color: #8A6720;
 }
 
 .text-brand-green {
-  color: #1B4B36;
+  color: #A8802E;
 }
 
 .border-brand-green {
-  border-color: #1B4B36 !important;
+  border-color: #A8802E !important;
 }
 </style>

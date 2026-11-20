@@ -552,7 +552,7 @@ watch(() => form.entrega_programada, (val) => {
 
 // ── Ayuda con el pedido ────────────────────────────────────
 function contactSoporte() {
-  const phone = (import.meta.env.VITE_WA_PHONE ?? '51984199340').replace(/\D/g, '')
+  const phone = (import.meta.env.VITE_WA_PHONE ?? '51999999999').replace(/\D/g, '')
   const msg = 'Hola, tengo una consulta sobre mi pedido en la web.'
   window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank')
 }

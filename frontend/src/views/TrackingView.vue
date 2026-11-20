@@ -20,7 +20,7 @@
           </p>
         </div>
         <div class="w-16 h-16 shrink-0 flex items-center justify-center">
-          <img src="/images/logobirds.png" alt="Birds" class="w-full h-full object-contain"
+          <img src="/images/logo-galana.jpeg" alt="Galana" class="w-full h-full object-contain"
             @error="($event.target as HTMLImageElement).style.display = 'none'" />
         </div>
       </div>
@@ -217,7 +217,7 @@
                   ¡Pedido entregado!
                 </p>
                 <p class="text-[12px] text-green-600 m-0">
-                  Gracias por elegir Birds. Esperamos que disfrutes tu pedido.
+                  Gracias por elegir Galana. Esperamos que disfrutes tu pedido.
                 </p>
               </div>
             </div>
@@ -490,7 +490,7 @@ const searchForm = ref({ orderId: '', phone: '' })
 const orderId = ref<string>((route.params.id as string) ?? '')
 const phone = ref<string>((route.query.tel as string) ?? '')
 
-const waPhone = (import.meta.env.VITE_WA_PHONE ?? '51984199340').replace(/\D/g, '')
+const waPhone = (import.meta.env.VITE_WA_PHONE ?? '51999999999').replace(/\D/g, '')
 
 let refreshInterval: ReturnType<typeof setInterval> | null = null
 
