@@ -25,7 +25,17 @@ self.addEventListener("push", (event) => {
     vibrate: [200, 100, 200],
   };
 
-  event.waitUntil(self.registration.showNotification(title, options));
+  event.waitUntil(
+    Promise.all([
+      self.registration.showNotification(title, options),
+      // Avisa a las pestañas abiertas del panel para que suene la alerta al instante
+      self.clients
+        .matchAll({ type: "window", includeUncontrolled: true })
+        .then((list) =>
+          list.forEach((c) => c.postMessage({ type: "nuevo-pedido" })),
+        ),
+    ]),
+  );
 });
 
 // Al tocar la notificación, abre (o enfoca) el panel de pedidos
