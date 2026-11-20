@@ -18,12 +18,7 @@ class NewOrderNotification extends Notification
 
     public function toWebPush($notifiable, $notification): WebPushMessage
     {
-        $tipoLabel = match ($this->order->type) {
-            'delivery' => 'Delivery',
-            'recoger'  => 'Para recoger',
-            'local'    => 'En local',
-            default    => $this->order->type,
-        };
+        $tipoLabel = $this->order->type->label();
 
         return (new WebPushMessage)
             ->title('🔔 Nuevo pedido — ' . $tipoLabel)
